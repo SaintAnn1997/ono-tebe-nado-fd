@@ -137,6 +137,7 @@
 }
 
 .lots__item {
+    position: relative;
     width: calc(34.1% - 25px);
     min-height: 596px;
 }
@@ -170,18 +171,22 @@
 }
 
 .card__title {
+    position: relative;
     font-size: var(--font-size-md);
     line-height: var(--line-height-tight);
     color: var(--color-white);
     text-transform: uppercase;
     text-decoration-color: var(--color-white);
+    z-index: 5;
 }
 
 .card__description {
+    position: relative;
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-tight);
     color: var(--color-white);
+    z-index: 5;
 }
 
 .lots__link {
