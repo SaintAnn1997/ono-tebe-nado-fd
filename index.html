@@ -16,9 +16,12 @@
   <header class="header">
     <nav class="header__menu">
       <ul class="header__links-list">
-        <li class="header__links-list-item"><a href="#" target="_blank">главная</a></li>
-        <li class="header__links-list-item underline"><a href="#" target="_blank">посмотреть лоты</a></li>
-        <li class="header__links-list-item underline"><a href="#" target="_blank">об аукционе</a></li>
+        <li class="header__links-list-item"><a href="#" class="header__links-list-link header__links-list-link_active"
+            target="_blank">главная</a></li>
+        <li class="header__links-list-item"><a href="#" class="header__links-list-link" target="_blank">посмотреть
+            лоты</a></li>
+        <li class="header__links-list-item"><a href="#" class="header__links-list-link" target="_blank">об аукционе</a>
+        </li>
       </ul>
     </nav>
 
@@ -34,9 +37,9 @@
   <main>
     <section class="hero overlay">
       <h1 class="hero__title">
-        <span class="hero__title-left">ОНО</span>
-        <span class="hero__title-center">ТЕБЕ</span>
-        <span class="hero__title-right">НАДО</span>
+        <span class="hero__title-left">оно</span>
+        <span class="hero__title-center">теб<span class="hero__title-letter">е</span></span>
+        <span class="hero__title-right">над<span class="hero__title-letter">о</span></span>
       </h1>
 
       <div class="hero__bottom">
@@ -58,11 +61,11 @@
                 Фильм режиссёра, который бросил киношколу
               </h3>
 
-              <div class="card__description">
+              <p class="card__description">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр —
                 Пол
                 Томас Андерсон?
-              </div>
+              </p>
             </article>
           </a>
         </li>
@@ -74,12 +77,12 @@
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
 
-              <div class="card__description">
+              <p class="card__description">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней
                 одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И
                 это
                 всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-              </div>
+              </p>
             </article>
           </a>
         </li>
@@ -91,12 +94,12 @@
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
 
-              <div class="card__description">
+              <p class="card__description">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких
                 полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из
                 революционных
                 работ Кандинского?
-              </div>
+              </p>
             </article>
           </a>
         </li>
@@ -111,24 +114,29 @@
           <img class="about__logo-image" src="./images/logo-white.svg" alt="Логотип">
         </a>
 
-        <h2 class="about__title section-title">Об аукционе</h2>
+        <article class="about__content">
+          <h2 class="about__title section-title">Об аукционе</h2>
 
-        <div class="about__description">
-          <p class="about__description-text">
-            Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не
-            должны
-            были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может
-            нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-          </p>
+          <div class="about__description">
+            <p class="about__description-text">
+              Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не
+              должны
+              были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую
+              может
+              нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+            </p>
 
-          <p class="about__description-text">
-            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками.
-            Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
-            на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную
-            культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали
-            культовыми.
-          </p>
-        </div>
+            <p class="about__description-text">
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные
+              критиками.
+              Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную
+              культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали
+              культовыми.
+            </p>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>
@@ -143,28 +151,36 @@
     <nav class="footer__menu">
       <ul class="footer__menu-list">
         <li class="footer__menu-list-item">
-          <a href="#" class="footer__menu-link" target="_blank">главная</a>
+          <a href="#" class="footer__menu-link footer__menu-link_active" target="_blank">главная</a>
         </li>
-        <li class="footer__menu-list-item underline">
+        <li class="footer__menu-list-item">
           <a href="#" class="footer__menu-link" target="_blank">посмотреть лоты</a>
         </li>
-        <li class="footer__menu-list-item underline">
+        <li class="footer__menu-list-item">
           <a href="#" class="footer__menu-link" target="_blank">об аукционе</a>
         </li>
       </ul>
     </nav>
 
-    <div class="footer__social-list">
-      <a href="#" class="footer__social-link" target="_blank">
-        <img class="footer__social-icon" src="images/yt.svg" alt="youtube">
-      </a>
-      <a href="#" class="footer__social-link" target="_blank">
-        <img class="footer__social-icon" src="images/vk.svg" alt="vk">
-      </a>
-      <a href="#" class="footer__social-link" target="_blank">
-        <img class="footer__social-icon" src="images/pinterest.svg" alt="pinterest">
-      </a>
-    </div>
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
+        <a href="#" class="footer__social-link" target="_blank">
+          <img class="footer__social-icon" src="images/yt.svg" alt="youtube">
+        </a>
+      </li>
+
+      <li class="footer__social-list-item">
+        <a href="#" class="footer__social-link" target="_blank">
+          <img class="footer__social-icon" src="images/vk.svg" alt="vk">
+        </a>
+      </li>
+
+      <li class="footer__social-list-item">
+        <a href="#" class="footer__social-link" target="_blank">
+          <img class="footer__social-icon" src="images/pinterest.svg" alt="pinterest">
+        </a>
+      </li>
+    </ul>
   </footer>
 </body>
 
